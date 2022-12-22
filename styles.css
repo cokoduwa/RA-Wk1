@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    color: #222222;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    background-color: #F0F9F9;
+}
+
+/* Navigation */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.logo {
+    width: 200px;
+}
+
+.links {
+    display: flex;
+    gap: 2em;
+    font-size: .85em;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #222222;
+}
+
+a:hover {
+    text-decoration: underline 3px goldenrod;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+/* icons */
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.favorite {
+    color: #B64B17;
+}
+
+.favorite:hover {
+    font-variation-settings:
+    'FILL' 100;
+    cursor: pointer;
+}
+
+.timer {
+    color: #178080;
+}
+
+.search:hover {
+    cursor: pointer;
+}
+
+/* Header */
+.header {
+    padding: 2em;
+}
+
+.header p {
+    padding: 2em 5em;
+}
+
+/* Part One Section*/
+
+.part-one {
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 2em;
+}
+
+.text-box {
+    height: 100%;
+}
+
+.first:hover {
+    border-right: solid 3px goldenrod;
+    border-bottom: solid 3px goldenrod;
+    border-left: solid 3px goldenrod ;
+}
+
+/*  Part Two Section*/
+.title-2 {
+    margin: 20px 0 50px;
+    font-size: 30px;
+}
+
+.recipe-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.card, .first {
+    /* border: solid 3px #F0F9F9; */
+    background-color: #ffffff;
+}
+
+.card:hover {
+    border-right: solid 5px goldenrod;
+    border-bottom: solid 5px goldenrod;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3, .card h2, .card p {
+    padding: 0 50px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    margin: 50px 0;
+    
+}
+
+.logo-2 {
+    width: 200px;
+}
+
+.icon {
+    width: 30px;
+}
+
+input {
+    font-size: 16px;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #178080;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Fonts */
+
+h2 {
+    font-size: 18px;
+}
+
+h3 {
+    color: #B64B17;
+    font-size: 14px;
+}
+
+.section p {
+    font-size: 14px;
+}
+
+.card {
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Media Queries */
+@media screen and (max-width:700px) {
+    .recipe-section {
+        width: 500px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .first {
+        width:500px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
